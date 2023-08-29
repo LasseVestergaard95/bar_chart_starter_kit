@@ -10,13 +10,7 @@ function addLi() {
   li.style.setProperty("--height", randomTal);
   list.appendChild(li);
   counter++;
+  if (list.children.length > 20) {
+    list.removeChild(list.children[0]);
+  }
 }
-
-// removeFirstLi();
-// function removeFirstLi(){
-// const firstLi = list.querySelector("li:first-child");
-// if (counter > 20){
-//     list.removeChild(firstLi);
-//     counter--
-//   }
-// }
