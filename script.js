@@ -2,7 +2,6 @@ const list = document.querySelector("ul");
 let counter = 0;
 const interval = setInterval(addLi, 1000);
 
-
 // det er vigtigt at de to nedenstående const står inde i funktionen så de generer et nyt random tal og li for hvert sekund(interval)
 function addLi() {
   const randomTal = Math.floor(Math.random() * 100);
@@ -12,7 +11,6 @@ function addLi() {
   list.appendChild(li);
   counter++;
 }
-
 
 // removeFirstLi();
 // function removeFirstLi(){
